@@ -1,0 +1,40 @@
+/* Стили основного блока */
+#ratingUsers-input {
+  position: relative;
+  float: left;
+}
+
+#ratingUsers-input input {
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+/* определения стиля для звезды */
+#ratingUsers-input input:checked ~ label {
+  height: 15px;
+  width: 15px;
+  background: url('../img/star.ico');
+}
+
+#ratingUsers-input label {
+  height:15px;
+  width: 15px;
+  float: right;/* по правой стороне, т.к. необходимо выстроить элементы в обратном порядке */
+  cursor: pointer;
+  margin-right: 5px;
+  background: url('../img/star_none.ico');
+  position: relative;
+  z-index: 1;
+}
+
+/*  определения стиля  для выбранных звезд*/
+#ratingUsers-input label:hover, #ratingUsers-input label:hover ~ label {
+  background: url('../img/star.ico');
+  height: 15px;
+  width: 15px;
+}
+

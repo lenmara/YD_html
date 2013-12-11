@@ -1,0 +1,9 @@
+table, td, th {
+              border: 1px solid black;
+              }
+
+button.new {
+                    -moz-border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    border-radius: 5px;
+            }
